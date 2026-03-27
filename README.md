@@ -85,6 +85,6 @@ That keeps the agent from:
 
 ## Notes
 
-- No license is included yet.
+- Licensed under MIT.
 - The skill is intentionally compact so it is easier to audit and customize.
 - If you want a more opinionated version, you can extend the reference file with domain-specific loop patterns.
