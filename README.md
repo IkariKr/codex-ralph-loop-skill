@@ -1,6 +1,6 @@
-# ralph-loop-skill
+# codex-ralph-loop-skill
 
-An iterative execution skill for CodeX/Codex that keeps work moving in short plan -> act -> check cycles until the task is actually complete.
+GitHub repository for `ralph-loop-skill`, a Codex/CodeX skill that keeps work moving in short plan -> act -> check cycles until the task is actually complete.
 
 Chinese summary:
 `ralph-loop-skill` helps the agent avoid stopping at analysis, fake progress updates, repeated blind retries, and scope drift. It pushes each round to produce a real change, a verified result, or a clear reason to stop.
