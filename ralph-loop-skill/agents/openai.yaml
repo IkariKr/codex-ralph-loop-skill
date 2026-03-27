@@ -1,4 +1,0 @@
-interface:
-  display_name: "Ralph Loop Skill"
-  short_description: "Iterative goal-driven execution loop for CodeX"
-  default_prompt: "Use ralph-loop-skill to keep working in short plan-act-check cycles until the task is complete."
