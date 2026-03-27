@@ -1,9 +1,9 @@
 # codex-ralph-loop-skill
 
-GitHub repository for `ralph-loop-skill`, a Codex/CodeX skill that keeps work moving in short plan -> act -> check cycles until the task is actually complete.
+GitHub repository for `codex-ralph-loop-skill`, a Codex/CodeX skill that keeps work moving in short plan -> act -> check cycles until the task is actually complete.
 
 Chinese summary:
-`ralph-loop-skill` helps the agent avoid stopping at analysis, fake progress updates, repeated blind retries, and scope drift. It pushes each round to produce a real change, a verified result, or a clear reason to stop.
+`codex-ralph-loop-skill` helps the agent avoid stopping at analysis, fake progress updates, repeated blind retries, and scope drift. It pushes each round to produce a real change, a verified result, or a clear reason to stop.
 
 ## What It Does
 
@@ -18,7 +18,7 @@ Chinese summary:
 ```text
 .
 |- README.md
-`- ralph-loop-skill/
+`- codex-ralph-loop-skill/
    |- SKILL.md
    |- agents/
    |  `- openai.yaml
@@ -28,19 +28,19 @@ Chinese summary:
 
 ## Install
 
-Copy or symlink the `ralph-loop-skill/` folder into your local CodeX skills directory:
+Copy or symlink the `codex-ralph-loop-skill/` folder into your local CodeX skills directory:
 
 ```powershell
 New-Item -ItemType Directory -Force -Path "$HOME\\.codex\\skills" | Out-Null
-Copy-Item -Recurse -LiteralPath ".\\ralph-loop-skill" -Destination "$HOME\\.codex\\skills\\ralph-loop-skill"
+Copy-Item -Recurse -LiteralPath ".\\codex-ralph-loop-skill" -Destination "$HOME\\.codex\\skills\\codex-ralph-loop-skill"
 ```
 
 If you prefer a symlink:
 
 ```powershell
 New-Item -ItemType SymbolicLink `
-  -Path "$HOME\\.codex\\skills\\ralph-loop-skill" `
-  -Target "D:\\path\\to\\this-repo\\ralph-loop-skill"
+  -Path "$HOME\\.codex\\skills\\codex-ralph-loop-skill" `
+  -Target "D:\\path\\to\\this-repo\\codex-ralph-loop-skill"
 ```
 
 ## When To Use It
@@ -56,9 +56,9 @@ Use this skill when you want CodeX/Codex to:
 Typical prompts:
 
 ```text
-Use ralph-loop-skill and keep iterating until this bug is fixed and verified.
-Use ralph-loop-skill to work through this refactor step by step.
-Use ralph-loop-skill and stop only when the requested outcome is complete or you hit a real blocker.
+Use codex-ralph-loop-skill and keep iterating until this bug is fixed and verified.
+Use codex-ralph-loop-skill to work through this refactor step by step.
+Use codex-ralph-loop-skill and stop only when the requested outcome is complete or you hit a real blocker.
 ```
 
 ## Core Rule
@@ -76,11 +76,11 @@ That keeps the agent from:
 
 ## Included Files
 
-- `ralph-loop-skill/SKILL.md`
+- `codex-ralph-loop-skill/SKILL.md`
   The main skill definition with workflow, stop conditions, anti-patterns, and delivery checks.
-- `ralph-loop-skill/references/loop-patterns.md`
+- `codex-ralph-loop-skill/references/loop-patterns.md`
   Small templates for progress updates, escalation messages, and stop decisions.
-- `ralph-loop-skill/agents/openai.yaml`
+- `codex-ralph-loop-skill/agents/openai.yaml`
   UI metadata for environments that surface installed skills.
 
 ## Notes
